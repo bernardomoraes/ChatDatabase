@@ -1,4 +1,4 @@
-/* A ideia ainda é ter vários tipos de copys pra mesma parada, É um pouco do que tem no disrupt, mas ele falha em identificar essa sutileza (o que é esperado já que é algo mais complexo) então ter uns 3 tipos de respostas diferentes com propostas diferentes para o mesmo padrão. */
+/* A ideia ainda é ter vários tipos de copys e exemplos para o mesmo objetivo, atualmente ele falha em identificar essa sutileza (o que é esperado já que é algo mais complexo) então ter uns 3 tipos de respostas diferentes com propostas diferentes para o mesmo padrão. */
 
 
 /* Selecionar Nome do Talento */
@@ -122,23 +122,3 @@ document.querySelector("button.saveButton").click()
     
 // Next Step
 document.querySelector("div.msg-form__message-texteditor p").innerHTML = "Olá " + talentname +" conseguiu dar uma olhada na minha proposta?"
-
-/* "content_scripts": [
-    {
-        "Set-Cookie": [
-            "flavor=choco",
-            "SameSite=None",
-            "Secure"
-        ],
-
-        "matches": [
-            "https://www.linkedin.com/"
-        ],
-        
-        "css": [
-            "style.css"
-        ],
-        "js": [
-            "content.js"
-        ]
-    } */
