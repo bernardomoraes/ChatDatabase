@@ -1,4 +1,4 @@
-/* A ideia ainda é ter vários tipos de copys pra mesma parada saca? É um pouco do que tem no disrupt, mas ele falha em identificar essa sutileza (o que é esperado já que é algo mais complexo) então ter uns 3 tipos de respostas diferentes com propostas diferentes para o mesmo padrão. */
+/* A ideia ainda é ter vários tipos de copys pra mesma parada, É um pouco do que tem no disrupt, mas ele falha em identificar essa sutileza (o que é esperado já que é algo mais complexo) então ter uns 3 tipos de respostas diferentes com propostas diferentes para o mesmo padrão. */
 
 
 /* Selecionar Nome do Talento */
@@ -68,7 +68,7 @@ document.querySelectorAll("span.msg-s-event-listitem--group-a11y-heading, p.msg-
 
 
 
-/* Consegui PoooorraaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAA */
+/* Consegui  */
 itens = document.querySelectorAll("span.msg-s-event-listitem--group-a11y-heading, p.msg-s-event-listitem__body")
 for (var i = 0; i < itens.length; ++i) {
     var joke = itens[i];
@@ -92,7 +92,7 @@ for (var i = 0; i < itens.length; ++i) {
 }
 console.log(conversationlog)
 
-/* fazer a varredura de todos os itens */
+/* fazer a varredura de todos os itens!!! Não Funcional ainda!! */
 var conversationitens = document.querySelectorAll("li.msg-conversation-listitem")
 itens = document.querySelectorAll("span.msg-s-event-listitem--group-a11y-heading, p.msg-s-event-listitem__body")
 var conversationlog = []
@@ -119,6 +119,26 @@ document.querySelectorAll("div.content label").forEach((e) => {
     }
 })
 document.querySelector("button.saveButton").click()
-
-
+    
+// Next Step
 document.querySelector("div.msg-form__message-texteditor p").innerHTML = "Olá " + talentname +" conseguiu dar uma olhada na minha proposta?"
+
+/* "content_scripts": [
+    {
+        "Set-Cookie": [
+            "flavor=choco",
+            "SameSite=None",
+            "Secure"
+        ],
+
+        "matches": [
+            "https://www.linkedin.com/"
+        ],
+        
+        "css": [
+            "style.css"
+        ],
+        "js": [
+            "content.js"
+        ]
+    } */
